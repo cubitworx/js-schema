@@ -1,0 +1,35 @@
+{
+  "name": "js-schema",
+  "version": "0.0.1",
+  "license": "MIT",
+  "description": "Universal schema definition with translators for library specific schema definitions",
+  "scripts": {
+    "build": "tsc",
+		"lint": "tslint ./src/**/*.ts -t verbose",
+		"precommit": "npm run build && npm run lint && npm run test:once",
+    "test": "npm run build && jasmine",
+		"test:once": "jasmine"
+  },
+	"main": "./dist",
+	"types": "./src",
+  "author": "Charles Louw <charles.louw@gmail.com>",
+	"repository": {
+		"type" : "git",
+		"url" : "https://github.com/cubitworx/js-schema.git"
+	},
+  "dependencies": {
+    "@angular/common": "^2.4.1",
+    "@angular/compiler": "^2.4.1",
+    "@angular/core": "^2.4.1",
+    "@angular/forms": "^2.4.1",
+    "rxjs": "^5.0.2",
+    "zone.js": "^0.7.4"
+  },
+  "devDependencies": {
+    "@types/jasmine": "2.5.36",
+    "jasmine": "^2.5.3",
+    "jasmine-core": "^2.5.2",
+    "tslint": "^4.5.1",
+    "typescript": "~2.2.1"
+  }
+}
