@@ -1,0 +1,7 @@
+.*
+config/
+demo/
+**/*.spec.js
+**/*.spec.js.map
+**/tsconfig*.json
+**/webpack*.js
